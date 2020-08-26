@@ -59,7 +59,6 @@ public static double ValorFinal(int codigo, int quantidade){
     while (!condiLoop){
       Console.Write("Insira seu voto ou escolha 1 para sair >> ");
       escolha = int.Parse(Console.ReadLine()); 
-      //Votos(escolha,cand1,cand2,cand3,branco,nulo);
        if (escolha == 33){
       cand1 = cand1 + 1;
       Console.Write("Voto confirmado!\n\n");
@@ -101,8 +100,8 @@ public static double ValorFinal(int codigo, int quantidade){
 }
  
   public static void Main (string[] args) {
+    
    //Exercicio 1
-
     
     float num1;
     float num2;
@@ -120,7 +119,6 @@ public static double ValorFinal(int codigo, int quantidade){
     Console.WriteLine("O resultado é > {0}", Conta(num1,num2,operacao));
 
     //Exercicio 2
-
     
     int codigo;
     int quantidade;
@@ -132,8 +130,6 @@ public static double ValorFinal(int codigo, int quantidade){
     Console.Write("Insira a quantidade >> ");
     quantidade = int.Parse(Console.ReadLine());
     Console.WriteLine("O valor total foi de {0} R$.\n",ValorFinal(codigo, quantidade));
-    
-    Console.WriteLine("===========================================");
 
     Exercicio3();
 
