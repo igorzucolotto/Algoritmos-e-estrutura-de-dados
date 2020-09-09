@@ -2,62 +2,30 @@ using System;
 
 //ATIVIDADE DE ENGAJAMENTO 04
 
-class Pessoa {
+class people {
 	
-	string Nome;
-	int Idade;
-	double Peso, Altura;
+	string nome;
+	int idade;
+	double peso, altura;
 
-	public void Envelhercer(int i) {
-		if (i > 0){
-			Idade = Idade+i;
-			Crescer(i*0.5);
-		} else {
-			Console.WriteLine("ERRO!");
-		}
-	}
+	public void envelhecer(int anos_mais_velho){
 
-	public int RetornaIdade() {
-		return Idade;
-	}
+    if (idade < 21) {
+      altura += anos_mais_velho*0.5;
+    }
 
-	public void Engordar(double p) {
-		if (p > 0){
-			Peso = Peso+p;
-		} else {
-			Console.WriteLine("ERRO!");
-		}
-	}
+    idade += anos_mais_velho;
+  }
 
-	public void Emagrecer(double p) {
-		if (p > 0){
-			Peso = Peso-p;
-		} else {
-			Console.WriteLine("ERRO!");
-		}
-	}
+  public void engordar(double kg_ganho){
+    peso += kg_ganho; 
+  }
 
-	public double RetornaPeso() {
-		return Peso;
-	}
+  public void emagrecer(double kg_perdido){
+    peso -= kg_perdido; 
+  } 
 
-	public void Crescer(double a) {
-		if (a > 0 && < 21){
-			Altura = Altura+a;
-		} else {
-			Console.WriteLine("ERRO!");
-		}
-	}
-
-	public double RetornaAltura() {
-		return Altura;
-	}
-
-	public void AlteraNome(string n) {
-		Nome = n;
-	}
-
-	public string RetornaNome() {
-		return Nome;
-	}
+  public void crescer(double crescimento){
+    altura += crescimento;
+  }
 }
