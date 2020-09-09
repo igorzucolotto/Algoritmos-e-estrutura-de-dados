@@ -15,7 +15,7 @@ class Pessoa {
 			Idade = Idade+i;
 			Crescer(i*0.5);
 		} else {
-			Console.WriteLine("IDADE INVÁLIDA");
+			Console.WriteLine("ERRO!");
 		}
 	}
 
@@ -27,7 +27,7 @@ class Pessoa {
 		if (p > 0){
 			Peso = Peso+p;
 		} else {
-			Console.WriteLine("PESO INVÁLIDO +");
+			Console.WriteLine("ERRO!");
 		}
 	}
 
@@ -35,7 +35,7 @@ class Pessoa {
 		if (p > 0){
 			Peso = Peso-p;
 		} else {
-			Console.WriteLine("PESO INVÁLIDO -");
+			Console.WriteLine("ERRO!");
 		}
 	}
 
@@ -47,7 +47,7 @@ class Pessoa {
 		if (a > 0){
 			Altura = Altura+a;
 		} else {
-			Console.WriteLine("ALTURA INVÁLIDA");
+			Console.WriteLine("ERRO!");
 		}
 	}
 
