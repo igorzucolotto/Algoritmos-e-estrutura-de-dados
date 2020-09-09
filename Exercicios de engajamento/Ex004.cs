@@ -5,9 +5,7 @@ using System;
 class Pessoa {
 	
 	string Nome;
-	
 	int Idade;
-	
 	double Peso, Altura;
 
 	public void Envelhercer(int i) {
@@ -44,7 +42,7 @@ class Pessoa {
 	}
 
 	public void Crescer(double a) {
-		if (a > 0){
+		if (a > 0 && < 21){
 			Altura = Altura+a;
 		} else {
 			Console.WriteLine("ERRO!");
